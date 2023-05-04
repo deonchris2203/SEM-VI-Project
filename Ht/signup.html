@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Sign Up</title>
+    <link rel="stylesheet" href="styleup.css">
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-auth-compat.js"></script>
+</head>
+
+<body>
+    <div class="signup-form">
+        <div>
+            <h1>Welcome to Sigma Property Listing Sign Up</h1>
+
+            <div class="content">
+
+                <!--Name
+                <div class="input-group">
+                    <input type="text" name="username" id="username" placeholder="username">
+                </div>
+                -->
+            
+
+                <!--Email-->
+                <div class="input-group">
+                    <input type="text" id="email" name="email" placeholder="Enter your Email">
+                </div>
+
+                <!--Password-->
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Enter your Password">
+                </div>
+
+                <!--Sign Up Button-->
+                <div class="action">
+                    <button id="submit-btn" onclick="signUp()">Sign Up</button>
+                </div>
+
+                <!--sign in option-->
+                <div class="parent">
+                    <div class= 'child'><p>Already have an Account ?</p> </div>
+                    <div class="child"><span><a href="signin.html">Sign In </a></span> </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <script src="main.js"> </script>
+</body>
+
+</html>
