@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" href="/css/new.css" type="text/css" />
+    <title>Upload your Property</title>
+    <!-- <link rel="stylesheet" href="D:/School/html/upload/css/main.css" /> -->
+    <!-- <link rel="stylesheet" media="all" href="/css/main.css" type="text/css" /> -->
+</head>
+
+<body>
+    
+    <label>Property Name</label> <input type="text" id="prop" pattern="[A-Za-z]+" required> <br><br>
+    <label>Property Price</label> <input id="price" type="number"><br><br>
+    <label>Property Address</label> <input type="text" id="address" ><br><br>
+    <label>Contact Information</label> <textarea id="contactinfo"></textarea> <br><br>
+
+    <input type="file" id="fileInp" class="inputFile" onchange="getFile(event)" accept = "image/jpeg, image/png">
+    <!-- <label for="fileInp">+</label> -->
+    <span class="fileText" hidden></span>
+
+    <button onclick="uploadImage(); uploadToFirestore()" >Upload Property</button>
+    <!-- <button onclick="uploadToFirestore()">Upload Text</button> -->
+    <!-- <button onclick="showProd()"> Show Product</button> -->
+    
+
+    <div class="uploadedImg">
+        <img alt="" class="img"/>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script src="/js/new.js"></script>
+
+</body>
+</html>
